@@ -1,0 +1,172 @@
+/* Estilos adicionais para melhorar a responsividade */
+
+/* Ajustes para dispositivos extra pequenos (menos de 576px) */
+@media (max-width: 575.98px) {
+    #hero {
+        height: 100vh;
+        padding-top: 80px;
+    }
+    
+    #hero h1 {
+        font-size: 1.5rem;
+    }
+    
+    .navbar-brand {
+        font-size: 1.2rem;
+    }
+    
+    section {
+        padding: 3rem 0;
+    }
+    
+    .section-title {
+        margin-bottom: 2rem;
+    }
+    
+    .service-card, .doc-card, .testimonial-card {
+        padding: 1.5rem;
+    }
+    
+    .contact-info {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .contact-info i {
+        margin-bottom: 0.5rem;
+    }
+    
+    .contact-info .ms-3 {
+        margin-left: 0 !important;
+    }
+    
+    #whatsapp-button a {
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
+        font-size: 25px;
+    }
+    
+    .footer-links {
+        margin-bottom: 2rem;
+    }
+}
+
+/* Ajustes para dispositivos pequenos (576px - 767px) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+    #hero {
+        height: 70vh;
+    }
+    
+    #hero h1 {
+        font-size: 1.8rem;
+    }
+    
+    .service-card, .doc-card, .testimonial-card {
+        height: auto;
+    }
+}
+
+/* Ajustes para dispositivos médios (768px - 991px) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+    #hero h1 {
+        font-size: 2rem;
+    }
+    
+    .service-card, .doc-card {
+        margin-bottom: 1.5rem;
+    }
+}
+
+/* Ajustes para tablets em modo retrato */
+@media (orientation: portrait) and (min-width: 768px) and (max-width: 991.98px) {
+    .map-container {
+        height: 300px;
+    }
+}
+
+/* Ajustes para melhorar a acessibilidade */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        transition: none !important;
+        animation: none !important;
+    }
+}
+
+/* Melhorias para telas de alta resolução */
+@media (min-width: 1400px) {
+    .container {
+        max-width: 1320px;
+    }
+    
+    #hero h1 {
+        font-size: 3rem;
+    }
+}
+
+/* Ajustes para dispositivos com tela sensível ao toque */
+@media (hover: none) {
+    .btn:hover {
+        transform: none !important;
+    }
+    
+    .service-card:hover,
+    .doc-card:hover {
+        transform: none !important;
+    }
+    
+    #whatsapp-button a:hover {
+        transform: none !important;
+    }
+    
+    .social-icons a:hover {
+        transform: none !important;
+    }
+}
+
+/* Melhorias para acessibilidade */
+.btn:focus,
+.form-control:focus,
+.form-select:focus {
+    box-shadow: 0 0 0 0.25rem rgba(0, 86, 179, 0.25);
+}
+
+/* Ajustes para impressão */
+@media print {
+    #header, #footer, #whatsapp-button {
+        display: none !important;
+    }
+    
+    section {
+        padding: 1rem 0 !important;
+    }
+    
+    .container {
+        max-width: 100% !important;
+    }
+}
+
+/* Melhorias para carregamento de página */
+.fade-in {
+    animation: fadeIn 0.5s ease-in;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Ajustes para dispositivos com modo escuro */
+@media (prefers-color-scheme: dark) {
+    /* Estes estilos só serão aplicados se o usuário tiver preferência por modo escuro no sistema */
+    /* Como o site não tem modo escuro implementado, estes estilos são apenas para referência futura */
+    /* 
+    :root {
+        --primary-color: #4d94ff;
+        --secondary-color: #3385ff;
+        --light-color: #333;
+        --dark-color: #f8f9fa;
+        --text-color: #f8f9fa;
+    }
+    */
+}
