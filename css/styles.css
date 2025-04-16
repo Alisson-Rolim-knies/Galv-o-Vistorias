@@ -18,7 +18,12 @@ body {
     overflow-x: hidden;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-weight: 700;
     margin-bottom: 1.5rem;
     color: var(--primary-color);
@@ -82,7 +87,7 @@ section {
 
 /* Hero Section */
 #hero {
-    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../images/hero-bg.jpg');
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../images/hero-bg..png');
     background-size: cover;
     background-position: center;
     height: 80vh;
@@ -309,9 +314,13 @@ footer {
     #hero h1 {
         font-size: 2rem;
     }
-    
+
     section {
         padding: 4rem 0;
+    }
+
+    .btn-primary {
+        margin-bottom: 10px;
     }
 }
 
@@ -319,15 +328,15 @@ footer {
     #hero {
         height: 70vh;
     }
-    
+
     #hero h1 {
         font-size: 1.8rem;
     }
-    
+
     .section-title {
         margin-bottom: 2rem;
     }
-    
+
     .map-container {
         height: 300px;
     }
@@ -337,15 +346,15 @@ footer {
     #hero {
         height: 60vh;
     }
-    
+
     #hero h1 {
         font-size: 1.5rem;
     }
-    
+
     section {
         padding: 3rem 0;
     }
-    
+
     .btn-primary {
         padding: 8px 20px;
     }
